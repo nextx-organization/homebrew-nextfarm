@@ -1,7 +1,6 @@
 class Nextfarm < Formula
   desc "Command-line client for NextFarm AI: chat, API, keys and webhooks"
   homepage "https://developers.nextfarm.vn/docs/cli"
-  version "0.3.2"
   license "MIT"
 
   livecheck do
