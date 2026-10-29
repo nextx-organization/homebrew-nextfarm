@@ -10,23 +10,23 @@ class Nextfarm < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.2/nextfarm-darwin-arm64.tar.gz"
-      sha256 "fb57270125eec24a4b4cdbb5978a91fc47585bca7a40a82644a582ed2f6d70d4"
+      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.3/nextfarm-darwin-arm64.tar.gz"
+      sha256 "d2f1cd1fab7f17a5a03a2ed384ab69c1b052f40a015de283ca5c6850e7ddb115"
     end
     on_intel do
-      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.2/nextfarm-darwin-x64.tar.gz"
-      sha256 "824720922f4a1bbfb4a3e6e1b9e2f3b7f1331eda89c689c936d426d0406027cb"
+      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.3/nextfarm-darwin-x64.tar.gz"
+      sha256 "0e5ffc5254857e2ef70e109445da7b70c77b4bd61908673170175cac92d7215b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.2/nextfarm-linux-arm64.tar.gz"
-      sha256 "7c2d25965c90c993afb0485009bb74cb6c13d7754149b00149cccd478a0daf34"
+      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.3/nextfarm-linux-arm64.tar.gz"
+      sha256 "92066c9776a02d0f178ffb6f4b167a8cb8863b9f4b2a50273b579e4f588362cc"
     end
     on_intel do
-      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.2/nextfarm-linux-x64.tar.gz"
-      sha256 "97d2e836ef70cc471ca5ec8a975b83f1b7c4e9e21bd8832c07ccd4d013377e14"
+      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.3/nextfarm-linux-x64.tar.gz"
+      sha256 "d779e16f943107c98bb0c4b038ced8ca23b9b5572c875b8be63a003e937e4d4b"
     end
   end
 
