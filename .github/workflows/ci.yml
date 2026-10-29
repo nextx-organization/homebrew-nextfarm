@@ -1,0 +1,21 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Homebrew style + audit
+        run: |
+          tap="${GITHUB_REPOSITORY%%/*}/${GITHUB_REPOSITORY#*/homebrew-}"
+          brew tap "$tap" "$GITHUB_WORKSPACE"
+          brew trust "$tap" >/dev/null 2>&1 || true
+          brew style "$tap"
+          for f in Formula/*.rb; do brew audit --strict --online "$tap/$(basename "$f" .rb)"; done
+      - name: Scoop manifests are valid JSON with a hash per architecture
+        run: for f in bucket/*.json; do jq -e '.version and .architecture."64bit".url and .architecture."64bit".hash' "$f" >/dev/null; done
