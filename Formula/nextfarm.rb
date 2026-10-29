@@ -1,28 +1,33 @@
 class Nextfarm < Formula
-  desc "NextFarm in your terminal: chat with NextFarm AI on your workspace data, call the API, manage keys and webhooks"
+  desc "Command-line client for NextFarm AI: chat, API, keys and webhooks"
   homepage "https://developers.nextfarm.vn/docs/cli"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
+
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
 
   on_macos do
     on_arm do
-      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.1/nextfarm-darwin-arm64.tar.gz"
-      sha256 "7d85de35e6508ede9f8a0644ba560d738cb52372da3ca9b783abf3931cc7f4c2"
+      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.2/nextfarm-darwin-arm64.tar.gz"
+      sha256 "fb57270125eec24a4b4cdbb5978a91fc47585bca7a40a82644a582ed2f6d70d4"
     end
     on_intel do
-      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.1/nextfarm-darwin-x64.tar.gz"
-      sha256 "6bcfc3b2513f9453ff9b678c7bfe1571cc3855e372c3d01e9af3d3b8eff35624"
+      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.2/nextfarm-darwin-x64.tar.gz"
+      sha256 "824720922f4a1bbfb4a3e6e1b9e2f3b7f1331eda89c689c936d426d0406027cb"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.1/nextfarm-linux-arm64.tar.gz"
-      sha256 "de0f1996ba54b086f276134f3336734ae229e282865c3f0077c3eca9ed35e07f"
+      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.2/nextfarm-linux-arm64.tar.gz"
+      sha256 "7c2d25965c90c993afb0485009bb74cb6c13d7754149b00149cccd478a0daf34"
     end
     on_intel do
-      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.1/nextfarm-linux-x64.tar.gz"
-      sha256 "975666ee244a6f8c3924c7ed538365560d8cbfac8d5a0417eba0fab8edef2188"
+      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.2/nextfarm-linux-x64.tar.gz"
+      sha256 "97d2e836ef70cc471ca5ec8a975b83f1b7c4e9e21bd8832c07ccd4d013377e14"
     end
   end
 

@@ -1,12 +1,12 @@
 {
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "NextFarm in your terminal: chat with NextFarm AI on your workspace data, call the API, manage keys and webhooks",
   "homepage": "https://developers.nextfarm.vn/docs/cli",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.1/nextfarm-windows-x64.zip",
-      "hash": "2045de0d9fac46e310df83b8d9e7f4eb061ab19fd6ba7c816ff966ad2e66dcd9"
+      "url": "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.2/nextfarm-windows-x64.zip",
+      "hash": "9509debabfde929615f29048adb1ec036e7ee8c5b8fe2564f72ea419af9780ec"
     }
   },
   "bin": "nextfarm.exe",
