@@ -1,28 +1,28 @@
 class Nextfarm < Formula
   desc "NextFarm in your terminal: chat with NextFarm AI on your workspace data, call the API, manage keys and webhooks"
   homepage "https://developers.nextfarm.vn/docs/cli"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.0/nextfarm-darwin-arm64.tar.gz"
-      sha256 "eef9c7c36e8895a16945a6ccfc7408e3493fd388db37c0acabe843f04a03aa1d"
+      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.1/nextfarm-darwin-arm64.tar.gz"
+      sha256 "7d85de35e6508ede9f8a0644ba560d738cb52372da3ca9b783abf3931cc7f4c2"
     end
     on_intel do
-      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.0/nextfarm-darwin-x64.tar.gz"
-      sha256 "5c544a002bf3245da4f73e25556078a805a7b2a7ee5b7db65c293022051853b8"
+      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.1/nextfarm-darwin-x64.tar.gz"
+      sha256 "6bcfc3b2513f9453ff9b678c7bfe1571cc3855e372c3d01e9af3d3b8eff35624"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.0/nextfarm-linux-arm64.tar.gz"
-      sha256 "4cfe938555f908a12607423801dc122ab8ba35c68bdeb68d4b1374eb58796cec"
+      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.1/nextfarm-linux-arm64.tar.gz"
+      sha256 "de0f1996ba54b086f276134f3336734ae229e282865c3f0077c3eca9ed35e07f"
     end
     on_intel do
-      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.0/nextfarm-linux-x64.tar.gz"
-      sha256 "ccd8554a57d1a5480cd089441df06017a823cb7406273149278b0df4fdde12d8"
+      url "https://github.com/nextx-organization/nextfarm-cli/releases/download/v0.3.1/nextfarm-linux-x64.tar.gz"
+      sha256 "975666ee244a6f8c3924c7ed538365560d8cbfac8d5a0417eba0fab8edef2188"
     end
   end
 
